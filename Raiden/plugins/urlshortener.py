@@ -2,7 +2,7 @@ from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from Raiden import Raiden
 from Raiden.functions.shorturl import *
-from Raiden.Utils.url import get_url
+from Raiden.utils.url import get_url
 from Raiden.utils.errors import capture_err
 
 __MODULE__ = "ᴜʀʟ ꜱʜᴏʀᴛᴇɴᴇʀ"
