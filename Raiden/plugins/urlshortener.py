@@ -14,6 +14,6 @@ __HELP__ = """☆ /shorturl - Short Replyed URL\n
 @capture_err
 async def shorturl(client: Client, message: Message):
   urll = get_url(message)
-  url_short = url_shortener.make_shorten(urll)
+  url_short = make_shorten(urll)
   await reply_text("Your Short URL is\n `{url_short}`")
   
