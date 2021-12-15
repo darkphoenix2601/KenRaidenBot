@@ -4,6 +4,18 @@ from math import ceil
 from pyrogram.types import InlineKeyboardButton
 from Raiden import LOAD_MODULES, NOLOAD_MODULES
 
+class EqInlineKeyboardButton(InlineKeyboardButton):
+    def __eq__(self, other):
+        return self.text == other.text
+
+    def __lt__(self, other):
+        return self.text < other.text
+
+    def __gt__(self, other):
+        return self.text > other.text
+
+
+
 def count_modules(page_n, module_dict, prefix, chat=None):
     if not chat:
         modules = sorted(
