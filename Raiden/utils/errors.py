@@ -43,6 +43,6 @@ def capture_err(func):
                 ),
             )
             for x in error_feedback:
-                await app.send_message(vars.LOG_CHAT, x)
+                await Raiden.send_message(vars.LOG_CHAT, x)
             raise err
     return caperr
