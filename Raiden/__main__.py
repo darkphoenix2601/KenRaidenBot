@@ -7,7 +7,7 @@ import os
 from Raiden.utils.module import count_modules
 
 
-
+loop = asyncio.get_event_loop()
 
 
 
@@ -151,5 +151,5 @@ async def help_button(client, query):
     return await client.answer_callback_query(query.id)
 
 
-if __name__ == "__main__":
-    print("KenRaidenBot")
+if __name__ == '__main__':
+    loop.run_until_complete(start_bot())
