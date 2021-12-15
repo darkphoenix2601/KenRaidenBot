@@ -2,7 +2,7 @@
 
 from math import ceil
 from pyrogram.types import InlineKeyboardButton
-from KenRaidenBot import LOAD_MODULES, NOLOAD_MODULES
+from Raiden import LOAD_MODULES, NOLOAD_MODULES
 
 def count_modules(page_n, module_dict, prefix, chat=None):
     if not chat:
