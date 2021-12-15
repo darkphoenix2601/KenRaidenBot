@@ -1,5 +1,6 @@
 TgCrypto
 aiohttp
+asyncio
 pyrogram
 python-dateutil
 psutil
