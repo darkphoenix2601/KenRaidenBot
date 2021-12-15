@@ -40,6 +40,6 @@ def __list_all_modules():
     return all_modules
 
 
-importlib.import_module("Raiden.Plugins.__main__")
+importlib.import_module("Raiden.plugins.__main__")
 ALL_MODULES = sorted(__list_all_modules())
 __all__ = ALL_MODULES + ["ALL_MODULES"]
