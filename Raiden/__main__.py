@@ -5,7 +5,7 @@ import importlib
 import re
 import os
 from Raiden.utils.module import count_modules
-
+import asyncio
 
 loop = asyncio.get_event_loop()
 
