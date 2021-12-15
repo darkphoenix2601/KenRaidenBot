@@ -1,5 +1,5 @@
-import contextlib
 from __future__ import with_statement
+import contextlib
 from urllib.parse import urlencode
 from urllib import urlencode
 from urllib.request import urlopen
