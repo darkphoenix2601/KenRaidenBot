@@ -149,3 +149,7 @@ async def help_button(client, query):
         )
 
     return await client.answer_callback_query(query.id)
+
+
+if __name__ == "__main__":
+    Raiden.run()
