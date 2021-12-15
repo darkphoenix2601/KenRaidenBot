@@ -33,7 +33,7 @@ Raiden.start()
 
 
 # About Bot
-RaidenInfo = bot.get_me()
+RaidenInfo = Raiden.get_me()
 BOT_ID = RaidenInfo.id
 BOT_NAME = RaidenInfo.first_name
 BOT_USERNAME = RaidenInfo.username
