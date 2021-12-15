@@ -1,8 +1,7 @@
 import contextlib
 from urllib.parse import urlencode
-from urllib import urlencode
 from urllib.request import urlopen
-from urllib2 import urlopen
+
 import sys
 
 
