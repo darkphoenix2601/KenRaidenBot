@@ -152,4 +152,4 @@ async def help_button(client, query):
 
 
 if __name__ == "__main__":
-    Raiden.run()
+    print("KenRaidenBot")
