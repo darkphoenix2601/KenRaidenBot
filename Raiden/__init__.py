@@ -27,7 +27,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
     quit(1)
 
 # Client (Raiden)
-Raiden = Client("kenRaidenBotr", api_id=vars.API_ID, api_hash=vars.API_HASH, bot_token=vars.BOT_TOKEN)
+Raiden = Client("kenRaidenBot", api_id=vars.API_ID, api_hash=vars.API_HASH, bot_token=vars.BOT_TOKEN)
 print("Starting Client")
 Raiden.start()
 
