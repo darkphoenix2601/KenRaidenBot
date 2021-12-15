@@ -1,6 +1,6 @@
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from KenRaidenBot import Raiden
+from Raiden import Raiden
 from Raiden.functions.shorturl import *
 from Raiden.Utils.url import get_url
 from Raiden.utils.errors import capture_err
