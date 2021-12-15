@@ -6,7 +6,7 @@ import re
 import os
 from Raiden.utils.module import count_modules
 import asyncio
-
+from Raiden.plugins import ALL_MODULES
 loop = asyncio.get_event_loop()
 
 
