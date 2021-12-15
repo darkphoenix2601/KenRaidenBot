@@ -1,0 +1,6 @@
+TgCrypto
+aiohttp
+pyrogram
+python-dateutil
+psutil
+dnspython
