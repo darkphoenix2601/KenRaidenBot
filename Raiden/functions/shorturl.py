@@ -1,14 +1,9 @@
-
 import contextlib
 from __future__ import with_statement
-try:
-  from urllib.parse import urlencode
-  except ImportError:
-    from urllib import urlencode
-    try:
-      from urllib.request import urlopen
-      except ImportError:
-        from urllib2 import urlopen
+from urllib.parse import urlencode
+from urllib import urlencode
+from urllib.request import urlopen
+from urllib2 import urlopen
 import sys
 
 
