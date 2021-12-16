@@ -9,4 +9,4 @@ __HELP__ = """☆ /toss - Toss """
 @Raiden.on_message(filters.command("toss"))
 async def toss(client: Client, message: Message):
   tossed = random.choice(["Heads", "Tails"])
-  message.reply("Here Comes {tossed}!")
+  await message.reply("Here Comes {tossed}!")
