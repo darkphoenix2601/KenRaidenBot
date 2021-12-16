@@ -1,6 +1,6 @@
 from pyrogram import idle, Client, filters
 from Raiden import Raiden
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 import importlib
 import re
 import os
