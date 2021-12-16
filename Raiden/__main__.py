@@ -49,7 +49,6 @@ async def start_bot():
 @Raiden.on_message(filters.command("start"))
 async def start(client: Client, message: Message):
     if message.chat.type == "private":
-        message.reply("Hey {message.from_user.mention}, /n I am Ken Raiden, I can help you in Group Management with Fun and Cool Features.", reply_markup=start_buttons, disable_web_page_preview=True)
         start_buttons = InlineKeyboardMarkup(
             [
                 [
@@ -64,6 +63,8 @@ async def start(client: Client, message: Message):
                 ]
             ]
         )
+        message.reply("Hey {message.from_user.mention}, /n I am Ken Raiden, I can help you in Group Management with Fun and Cool Features.", reply_markup=start_buttons, disable_web_page_preview=True)
+       
         if message.chat.type != "private":
             message.reply("Hey I Am Here") 
 @Raiden.on_message(filters.command("help"))
