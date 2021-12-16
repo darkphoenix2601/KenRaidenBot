@@ -63,10 +63,10 @@ async def start(client: Client, message: Message):
                 ]
             ]
         )
-        message.reply("Hey {message.from_user.mention}, /n I am Ken Raiden, I can help you in Group Management with Fun and Cool Features.", reply_markup=start_buttons, disable_web_page_preview=True)
+        await message.reply("Hey {message.from_user.mention}, /n I am Ken Raiden, I can help you in Group Management with Fun and Cool Features.", reply_markup=start_buttons, disable_web_page_preview=True)
        
         if message.chat.type != "private":
-            message.reply("Hey I Am Here") 
+            await message.reply("Hey I Am Here") 
 @Raiden.on_message(filters.command("help"))
 async def help_command(_, message):
     if message.chat.type != "private":
